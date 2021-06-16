@@ -12,7 +12,7 @@ body{
     margin: 0;
 }
 
-#main{
+#auth-successful, #auth-unsuccessful{
     display: table;
     width: 100%;
     height: 100vh;
@@ -30,6 +30,7 @@ body{
 	  padding-right: 12px;
 	  animation: type .5s alternate infinite;
 }
+
 @keyframes type{
 	  from{box-shadow: inset -3px 0px 0px #888;}
 	  to{box-shadow: inset -3px 0px 0px transparent;}
