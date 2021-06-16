@@ -4,7 +4,22 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-	<h1>You are authenticated!</h1>
+	<div hidden id="auth-successful">
+		<div id="main">
+			<div class="fof">
+					<h1>You've been authenticated</h1>
+					<h3>Please close this tab</h3>
+			</div>
+		</div>
+	</div>
+
+	<div hidden id="auth-unsuccessful">
+		<div id="main">
+			<div class="fof">
+				<h1>Authentication Unsuccessful</h1>
+			</div>
+		</div>
+	</div>
 	<script src="index.js"></script>
 </body>
 </html>

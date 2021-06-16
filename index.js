@@ -2,7 +2,7 @@ const authorize_notion = async () => {
     const url = new URL(window.location.href);
     const searchParams = new URLSearchParams(url.searchParams);
     const temp_auth_code = searchParams.get("code");
-	console.log("temp_auth_code: ", temp_auth_code)
+    console.log("temp_auth_code: ", temp_auth_code)
 
     const req_body = {
         code: temp_auth_code,
@@ -19,13 +19,15 @@ const authorize_notion = async () => {
                 body: JSON.stringify(req_body),
             }
         );
+        $('#auth-successful').show();
 
         const notion_auth_data = await response.json();
-		console.log(notion_auth_data)
+        console.log(notion_auth_data)
         send_to_extension(notion_auth_data);
     } else {
-		console.log("error in url parameters")
-	}
+        $('#auth-unsuccessful').show();
+        console.log("error in url parameters")
+    }
 };
 
 const send_to_extension = (data) => {
