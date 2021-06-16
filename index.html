@@ -4,22 +4,23 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-	<div id="auth-successful" class="dynamic-content">
-		{% comment %} <div id="main">
-			<div class="fof"> {% endcomment %}
+	<div hidden id="auth-successful">
+		<div id="main">
+			<div class="fof">
 					<h1>You've been authenticated</h1>
 					<h3>Please close this tab</h3>
-			{% comment %} </div>
-		</div> {% endcomment %}
+			</div>
+		</div>
 	</div>
 
-	<div id="auth-unsuccessful" class="dynamic-content">
-		{% comment %} <div id="main">
-			<div class="fof"> {% endcomment %}
+	<div hidden id="auth-unsuccessful">
+		<div id="main">
+			<div class="fof">
 				<h1>Authentication Unsuccessful</h1>
-			{% comment %} </div>
-		</div> {% endcomment %}
+			</div>
+		</div>
 	</div>
+	
 	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="index.js"></script>
 </body>
