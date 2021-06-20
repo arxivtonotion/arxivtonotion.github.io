@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="index.css">
-</head>
-<body>
-	<div hidden id="auth-successful">
-		<div id="main">
-			<div class="fof">
-					<h1>You've been authenticated</h1>
-					<h2>Please close this tab</h2>
-			</div>
-		</div>
-	</div>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div hidden id="auth-successful">
+            <div id="main">
+                <div class="fof">
+                    <h1>You've been authenticated</h1>
+                    <h2>Please close this tab</h2>
+                </div>
+            </div>
+        </div>
 
-	<div hidden id="auth-unsuccessful">
-		<div id="main">
-			<div class="fof">
-				<h1>Authentication Unsuccessful</h1>
-			</div>
-		</div>
-	</div>
+        <div hidden id="auth-unsuccessful">
+            <div id="main">
+                <div class="fof">
+                    <h1>Authentication Unsuccessful</h1>
+                </div>
+            </div>
+        </div>
 
-	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="index.js"></script>
-</body>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="content" stlye="font-weight: 700">
+                            <h2>Star us on GitHub 🌟</h2>
+
+                            <span>
+                                <strong>arXiv to Notion</strong> is released
+                                under the MIT license and is available on
+                                github. If you like using arXiv to Notion then
+                                consider dropping us a star.
+                            </span>
+
+                            <br /><br />
+
+                            <a
+                                class="button"
+                                href="https://github.com/arxivtonotion"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fab fa-github mr-2"></i> arxiv to
+                                Notion
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://kit.fontawesome.com/f0e3875af3.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="index.js"></script>
+    </body>
 </html>
