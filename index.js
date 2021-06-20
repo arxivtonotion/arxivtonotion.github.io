@@ -34,10 +34,12 @@ const authorize_notion = async () => {
 };
 
 const send_to_extension = (data) => {
-    const extension_id = "mphoppdgbgknlpfpmkakoegfkidfblel";
+    const extension_id = "ijjcijepcgfnffhdhijmcbnolnaeggdf";
+    // const extension_id = "mphoppdgbgknlpfpmkakoegfkidfblel";
+
     chrome.runtime.sendMessage(extension_id, data, (response) => {
         if (response != "auth data set successfully") {
-			throw Error("Invalid response from chrome-extension: ", response)
+            throw Error("Invalid response from chrome-extension: ", response);
         }
     });
 };
