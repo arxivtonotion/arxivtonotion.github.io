@@ -1,3 +1,5 @@
+// get the token from URL parameters and send it to notion to get an auth token
+// then send that token to the extension
 const authorize_notion = async () => {
     const url = new URL(window.location.href);
     const searchParams = new URLSearchParams(url.searchParams);
